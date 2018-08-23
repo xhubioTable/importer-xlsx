@@ -1,6 +1,9 @@
 {
-  "name": "@xhubioTable/importer-xlsx",
-  "version": "0.0.6",
+  "name": "@xhubiotable/importer-xlsx",
+  "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "",
   "keywords": [
     "decision-table"
@@ -8,12 +11,12 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xhubioTable/importer-xlsx.git"
+    "url": "git+https://github.com/xhubiotable/importer-xlsx.git"
   },
   "bugs": {
-    "url": "https://github.com/xhubioTable/importer-xlsx/issues"
+    "url": "https://github.com/xhubiotable/importer-xlsx/issues"
   },
-  "homepage": "https://github.com/xhubioTable/importer-xlsx#readme",
+  "homepage": "https://github.com/xhubiotable/importer-xlsx#readme",
   "scripts": {
     "build": "npm run src_format && npm run src_lint && babel src -d lib",
     "src_lint": "eslint src tests",
@@ -54,7 +57,6 @@
     "semantic-release": "15.9.1"
   },
   "dependencies": {
-    "@xhubioTable/logger": "^3.0.0-alpha",
     "spreadsheet-column": "1.1.1",
     "trim": "0.0.1",
     "xlsx": "0.13.3"
