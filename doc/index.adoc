@@ -1,17 +1,2 @@
-= Table Import Spreadsheet Common
-This module contains the common functions used to import table models from a spreadsheet
-
-== getSheetEndRow
-Returns the last row of the spreadsheet. This row must contain a given key word.
-
-== getSheetEndColumn
-Returns the last column of the spreadsheet. This column must contain a given key word.
-
-== getCellValue
-Returns the cell value of spreadsheet given a column and row
-
-== getCell
-Returns the cell of spreadsheet given a column and row
-
-== createSpreadsheetAddress
-Creates the spreadsheet address to retrieve a column.
+== Importer Excel
+This importer imports Excel Spreadsheets. 
