@@ -1,3 +1,7 @@
+## Importer XLSX
+
+This package contains an importer which reads Excel Spreadsheets.
+These packages of @xhubiotable/xxx are collected under @xhubio/nanook-table.
 
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/xhubio/table-import-spreadsheet-common.svg)](https://greenkeeper.io/)
+For more information visit the [Nanook](http://nanook.xhub.io/) website.

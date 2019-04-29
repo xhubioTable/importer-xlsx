@@ -1,20 +1,24 @@
 import XLSX from 'xlsx'
 import SpreadsheetColumn from 'spreadsheet-column'
 
+/**
+ * An importer to load Excel Spreadsheets. This importer is used by the file
+ * processor. So it is possible to create importer for different kind of files.
+ */
 export class ImporterXlsx {
   constructor() {
-    // Stores the sheet by there name
+    /** {Map} Stores the sheets by there name */
     this.sheets = new Map()
 
-    // store the sheet names in the right order
+    // Stores the sheet names in the right order
     this._sheetNames = []
 
-    // The first column starts with '0'
+    /** A converter to map Excel columns to numbers. The first column starts with '0' */
     this.converter = new SpreadsheetColumn({ zero: true })
   }
 
   /**
-   * Free some memory
+   * Frees some memory. Cleats the existing loaded sheets
    */
   clear() {
     this._sheetNames = []
@@ -22,7 +26,7 @@ export class ImporterXlsx {
   }
 
   /**
-   * Opens the Spreadsheet and loads it
+   * Opens the Spreadsheet file and loads it.
    * @param fileName {string} The file to open
    */
   async loadFile(fileName) {
@@ -66,7 +70,7 @@ export class ImporterXlsx {
   }
 
   /**
-   * Returns a list of sheet names
+   * Returns the list with the names of the loaded sheet in the original order
    * @return sheets {array} A list of sheet names
    */
   get sheetNames() {
