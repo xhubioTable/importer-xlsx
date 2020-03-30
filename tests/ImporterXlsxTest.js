@@ -1,7 +1,6 @@
-'use strict'
 import path from 'path'
 
-import { ImporterXlsx } from '../lib/index'
+import { ImporterXlsx } from '../src/index'
 
 const FILE_NAME = path.join(__dirname, 'fixtures/descision_table_mini.xlsx')
 const SHEET_NAME_COLUMN = 'manyColumns'

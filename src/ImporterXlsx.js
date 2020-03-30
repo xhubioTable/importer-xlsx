@@ -35,7 +35,7 @@ export class ImporterXlsx {
     const workbook = XLSX.readFile(fileName)
 
     // store the sheet in the internal map
-    workbook.SheetNames.forEach(sheetName => {
+    workbook.SheetNames.forEach((sheetName) => {
       this._sheetNames.push(sheetName)
       const sheet = workbook.Sheets[sheetName]
       this.sheets.set(sheetName, sheet)
