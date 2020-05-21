@@ -67,7 +67,7 @@
     "semantic-release": "17.0.4"
   },
   "dependencies": {
-    "@babel/runtime": "7.9.2",
+    "@babel/runtime": "7.9.6",
     "spreadsheet-column": "1.1.1",
     "trim": "0.0.1",
     "xlsx": "0.15.6"
