@@ -71,5 +71,10 @@
     "spreadsheet-column": "1.1.1",
     "trim": "0.0.1",
     "xlsx": "0.16.8"
+  },
+  "template": {
+    "usedBy": [
+      "xhubioTable/model"
+    ]
   }
 }
