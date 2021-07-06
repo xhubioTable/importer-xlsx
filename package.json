@@ -67,6 +67,6 @@
     "@babel/runtime": "7.13.7",
     "spreadsheet-column": "1.1.1",
     "trim": "1.0.0",
-    "xlsx": "0.16.9"
+    "xlsx": "0.17.0"
   }
 }
