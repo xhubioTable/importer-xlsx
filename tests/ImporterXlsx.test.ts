@@ -1,10 +1,11 @@
-import path from 'path'
+import path from 'node:path'
 
 import { ImporterXlsx } from '../src/index'
 
 const FILE_NAME = path.join(__dirname, 'fixtures/descision_table_mini.xlsx')
 const SHEET_NAME_COLUMN = 'manyColumns'
 const SHEET_NAME_ROW = 'manyRows'
+const SHEET_NAME_PERSON = 'Person_with_friend'
 
 const spreadSheet = new ImporterXlsx()
 
@@ -13,7 +14,11 @@ beforeAll(async () => {
 })
 
 test('test loaded sheets', () => {
-  expect(spreadSheet.sheetNames).toEqual([SHEET_NAME_COLUMN, SHEET_NAME_ROW])
+  expect(spreadSheet.sheetNames).toEqual([
+    SHEET_NAME_COLUMN,
+    SHEET_NAME_ROW,
+    SHEET_NAME_PERSON
+  ])
 })
 
 test('get first cell', () => {
@@ -32,4 +37,12 @@ test('get last row 1', () => {
 
 test('get last row 2', () => {
   expect(spreadSheet.cellValue(SHEET_NAME_ROW, 2, 1388)).toEqual('Row 1389')
+})
+
+test('Empty filed must be undefined', () => {
+  const val = spreadSheet.cellValue(SHEET_NAME_PERSON, 5, 8)
+  const valStr = spreadSheet.cellValueString(SHEET_NAME_PERSON, 5, 8)
+
+  expect(val).toBeUndefined()
+  expect(valStr).toBeUndefined()
 })
