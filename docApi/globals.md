@@ -1,8 +1,8 @@
-[**@tlink/importer-xlsx**](README.md)
+[**@xhubiotable/importer-xlsx**](README.md)
 
 ***
 
-# @tlink/importer-xlsx
+# @xhubiotable/importer-xlsx
 
 ## Classes
 

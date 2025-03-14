@@ -1,4 +1,4 @@
-**@tlink/importer-xlsx**
+**@xhubiotable/importer-xlsx**
 
 ***
 

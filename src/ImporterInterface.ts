@@ -1,4 +1,4 @@
-import { LoggerInterface } from '@tlink/logger'
+import { LoggerInterface } from '@xhubiotable/logger'
 
 /**
  * Interface for an importer that loads spreadsheet files.

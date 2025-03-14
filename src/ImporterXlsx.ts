@@ -1,7 +1,7 @@
 import XLSX from 'xlsx'
 import SpreadsheetColumn from 'spreadsheet-column'
 import { ImporterInterface } from './ImporterInterface'
-import { LoggerInterface, LoggerMemory } from '@tlink/logger'
+import { LoggerInterface, LoggerMemory } from '@xhubiotable/logger'
 
 /**
  * Options for initializing an ImporterXlsx instance.

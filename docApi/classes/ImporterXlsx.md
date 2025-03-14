@@ -1,12 +1,12 @@
-[**@tlink/importer-xlsx**](../README.md)
+[**@xhubiotable/importer-xlsx**](../README.md)
 
 ***
 
-[@tlink/importer-xlsx](../globals.md) / ImporterXlsx
+[@xhubiotable/importer-xlsx](../globals.md) / ImporterXlsx
 
 # Class: ImporterXlsx
 
-Defined in: ImporterXlsx.ts:23
+Defined in: [ImporterXlsx.ts:23](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L23)
 
 An importer for loading Excel spreadsheets.
 
@@ -24,7 +24,7 @@ It uses the XLSX library to read the file and SpreadsheetColumn to convert colum
 
 > **new ImporterXlsx**(`opts`): [`ImporterXlsx`](ImporterXlsx.md)
 
-Defined in: ImporterXlsx.ts:48
+Defined in: [ImporterXlsx.ts:48](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L48)
 
 Constructs a new ImporterXlsx instance.
 
@@ -46,7 +46,7 @@ Options for initializing the importer, including an optional logger.
 
 > **\_sheetNames**: `string`[] = `[]`
 
-Defined in: ImporterXlsx.ts:35
+Defined in: [ImporterXlsx.ts:35](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L35)
 
 An array of sheet names in the order they appear in the workbook.
 
@@ -56,7 +56,7 @@ An array of sheet names in the order they appear in the workbook.
 
 > **converter**: `SpreadsheetColumn`
 
-Defined in: ImporterXlsx.ts:41
+Defined in: [ImporterXlsx.ts:41](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L41)
 
 A converter to map Excel column letters to numbers.
 The conversion is configured such that the first column corresponds to 0.
@@ -67,7 +67,7 @@ The conversion is configured such that the first column corresponds to 0.
 
 > `optional` **filename**: `string`
 
-Defined in: ImporterXlsx.ts:53
+Defined in: [ImporterXlsx.ts:53](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L53)
 
 The name of the loaded file.
 
@@ -77,7 +77,7 @@ The name of the loaded file.
 
 > **logger**: `LoggerInterface`
 
-Defined in: ImporterXlsx.ts:25
+Defined in: [ImporterXlsx.ts:25](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L25)
 
 Logger instance used for logging operations.
 
@@ -91,7 +91,7 @@ Logger instance used for logging operations.
 
 > **sheets**: `Map`\<`string`, `WorkSheet`\>
 
-Defined in: ImporterXlsx.ts:30
+Defined in: [ImporterXlsx.ts:30](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L30)
 
 A map storing the loaded worksheets by their sheet names.
 
@@ -103,7 +103,7 @@ A map storing the loaded worksheets by their sheet names.
 
 > **get** **sheetNames**(): `string`[]
 
-Defined in: ImporterXlsx.ts:157
+Defined in: [ImporterXlsx.ts:157](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L157)
 
 Retrieves the sheet names of the loaded workbook in their original order.
 
@@ -125,7 +125,7 @@ A list of all sheet names loaded from the file.
 
 > **cellValue**(`sheetName`, `column`, `row`): `undefined` \| `string` \| `number`
 
-Defined in: ImporterXlsx.ts:100
+Defined in: [ImporterXlsx.ts:100](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L100)
 
 Retrieves the value of a cell from a specified sheet.
 
@@ -165,7 +165,7 @@ The cell value as a number, string, or undefined if the cell is empty.
 
 > **cellValueString**(`sheetName`, `column`, `row`): `undefined` \| `string`
 
-Defined in: ImporterXlsx.ts:138
+Defined in: [ImporterXlsx.ts:138](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L138)
 
 Retrieves the value of a cell from a specified sheet as a string.
 
@@ -205,7 +205,7 @@ The cell value as a string, or undefined if the cell is empty.
 
 > **clear**(): `void`
 
-Defined in: ImporterXlsx.ts:60
+Defined in: [ImporterXlsx.ts:60](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L60)
 
 Clears all loaded data to free up memory.
 
@@ -225,7 +225,7 @@ This method deletes any cached or loaded data from the importer.
 
 > **loadFile**(`fileName`): `Promise`\<`void`\>
 
-Defined in: ImporterXlsx.ts:75
+Defined in: [ImporterXlsx.ts:75](https://github.com/xhubioTable/importer-xlsx/blob/7a565c80f28a805aa445fdd2330eb66e31140b63/src/ImporterXlsx.ts#L75)
 
 Opens and loads a file.
 
